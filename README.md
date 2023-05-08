@@ -10,6 +10,13 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 ### 📚 User Stories
 
 - As a user, I can see a page with a three by three grid board game with a question mark in each square.
+    -PseudoCode:
+        -input: the data provided
+        -output: a 3x3 grid with a question mark in each square
+        -Process: use .map to iterate through the array, and create a box for each index in the array. Then write the code in app.css that would allow for a grid to be created, by using the display : flex and the flex-wrap: wrap, we set the conditions that the grid should be no longer than 3 boxes accross, and then they begin to stack beneath the previous boxes. Within Square.js, we must use props to ensure passage of data from the parent component to the child component.
+
+
+
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
